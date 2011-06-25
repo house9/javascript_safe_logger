@@ -11,20 +11,11 @@ Gem::Specification.new do |s|
   s.summary     = %q{
     Rails 3.1 javascript asset for Paul Irish console.log wrapper
   }
-  s.description = %q{
-    Rails 3.1 javascript asset for Paul Irish console.log wrapper
-    
-    http://paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
-    https://raw.github.com/paulirish/html5-boilerplate/master/js/plugins.js
-    
-    add to your Gemfile and then include in your application.js
-    //= require safe_logger
-    
-    usage: log('inside coolFunc', this, arguments);
-  }
-
+  s.description = File.open('README.rdoc') { |f| f.read }
   s.rubyforge_project = "javascript_safe_logger"
 
+  s.add_dependency 'rails', '~> 3.1.0.rc'
+  
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
