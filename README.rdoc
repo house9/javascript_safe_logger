@@ -2,8 +2,8 @@
 
 This gem makes a javascript log method available as a Rails 3.1 asset
 
-* see {http://paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/}[http://paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/] 
-* see {https://github.com/paulirish/html5-boilerplate}[https://github.com/paulirish/html5-boilerplate]
+* see http://paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/ 
+* see https://github.com/paulirish/html5-boilerplate
 
 == Usage
 
