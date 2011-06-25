@@ -18,7 +18,9 @@ Gem::Specification.new do |s|
     https://raw.github.com/paulirish/html5-boilerplate/master/js/plugins.js
     
     add to your Gemfile and then include in your application.js
-    //= require javascript_safe_logger
+    //= require safe_logger
+    
+    usage: log('inside coolFunc', this, arguments);
   }
 
   s.rubyforge_project = "javascript_safe_logger"
