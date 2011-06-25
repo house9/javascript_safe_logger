@@ -1,15 +1,19 @@
 class JavascriptSafeLoggerGenerator < Rails::Generators::Base
-  source_root File.expand_path('../templates', __FILE__)
   
   def manifest
-    record do |m|
-      m.yaffle_route
+    say "  Adding safe_logger to javascript asset manifest file"
+    
+    begin
+      update_application_js
+    rescue Exception => e
+      say " -> Unexpected Failure in JavascriptSafeLoggerGenerator", :red
+      say e
     end
   end
       
   private 
   
-  def do_x
-    
+  def update_application_js
+    prepend_file "app/assets/javascripts/application.js", "//= require safe_logger\n"
   end
 end

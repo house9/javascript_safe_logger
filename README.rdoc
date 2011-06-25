@@ -8,11 +8,13 @@ This gem makes a javascript log method available as a Rails 3.1 asset
 == Usage
 
 in your javascript 
+
     log('inside coolFunc', this, arguments);
     // or simple
     log('hello world!');
     
 and in coffeescript
+
     log 'inside coolFunc', this, arguments
     # or simple
     log 'hello world!'
@@ -24,13 +26,19 @@ and in coffeescript
 
     gem 'javascript_safe_logger'
 
-2. Update the /app/assets/javascript/application.js file, add this before other requires 
+2. Update the /app/assets/javascript/application.js file
 
-    //= require 'safe_logger'
+    A. Manually update the file, add this before other requires 
+
+        //= require safe_logger
+
+    B. Or use the generator to update the application.js file
+
+        rails generate javascript_safe_logger
 
 == License
 
-Paul Irish released the javascript code with the {The Unlicense}[http://unlicense.org/] (aka: public domain)
+Paul Irish released the javascript code with the {The Unlicense}[http://unlicense.org/] (aka: public domain),
 so this gem is also released with the same license.
 
 
