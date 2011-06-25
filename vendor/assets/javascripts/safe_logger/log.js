@@ -1,4 +1,4 @@
-// https://raw.github.com/paulirish/html5-boilerplate/master/js/plugins.js
+// https://raw.github.com/paulirish/html5-boilerplate/master/js/plugins.js (45cd0378d5c3fdb03098)
 // usage: log('inside coolFunc', this, arguments);
 // paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
 window.log = function(){
