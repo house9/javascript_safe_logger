@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = File.open('README.rdoc') { |f| f.read }
   s.rubyforge_project = "javascript_safe_logger"
 
-  s.add_dependency 'rails', '~> 3.1.0.rc'
+  s.add_dependency 'rails', '~> 3.1'
   
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
