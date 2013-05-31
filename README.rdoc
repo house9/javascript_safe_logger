@@ -1,4 +1,4 @@
-== Rails 3.1 javascript asset for Paul Irish console.log wrapper
+== Rails 3.1 and up javascript asset for Paul Irish console.log wrapper
 
 This gem makes a javascript log method available as a Rails 3.1 asset
 
@@ -7,12 +7,12 @@ This gem makes a javascript log method available as a Rails 3.1 asset
 
 == Usage
 
-in your javascript 
+in your javascript
 
     log('inside coolFunc', this, arguments);
     // or simple
     log('hello world!');
-    
+
 and in coffeescript
 
     log 'inside coolFunc', this, arguments
@@ -28,7 +28,7 @@ and in coffeescript
 
 2. Update the /app/assets/javascript/application.js file
 
-    A. Manually update the file, add this before other requires 
+    A. Manually update the file, add this before other requires
 
         //= require safe_logger
 
@@ -42,4 +42,6 @@ Paul Irish released the javascript code with the {The Unlicense}[http://unlicens
 so this gem is also released with the same license.
 
 
+== Ruby Gems
 
+* https://rubygems.org/gems/javascript_safe_logger
